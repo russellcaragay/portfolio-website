@@ -1,6 +1,13 @@
 :root {
   --background-color: #fbfbfb;
+  --secondary-background-color: #edeff0;
+  --tertiary-background-color: #112b3c;
+
   --primary-font-color: black;
+  --secondary-font-color: #190a37;
+  --tertiary-font-color: #f5f3f3;
+
+  --section-break-color: #1363df;
 }
 
 html {
@@ -13,6 +20,13 @@ body {
   font-family: "Roboto", sans-serif;
   background-color: var(--background-color);
   color: var(--primary-font-color);
+}
+
+h2 {
+  color: var(--secondary-font-color);
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-size: 2rem;
 }
 
 h4 {
@@ -40,11 +54,17 @@ li {
   list-style: none;
 }
 
+.article-break {
+  border: none;
+  border-bottom: 2px var(--section-break-color) dashed;
+  width: 30%;
+}
+
 /* Summary Page */
 
 .summary-page {
   text-align: center;
-  padding: 20% 15%;
+  padding: 15%;
 }
 
 .profile-img {
@@ -91,6 +111,14 @@ li {
   font-size: 0.9rem;
 }
 
+.link-section {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .social-icons {
   gap: 15px;
   padding: 0;
@@ -113,11 +141,34 @@ li {
 .title-separator {
   border: none;
   border-top: 3px solid var(--primary-font-color);
-  margin: 20px 0;
+  margin: 0;
+  width: 230px;
+  text-align: center;
 }
 
 .navigation {
   padding: 0;
   gap: 20px;
   font-size: 0.8rem;
+}
+
+/* Skills Article */
+
+.skill-section {
+  background-color: var(--secondary-background-color);
+  padding: 10% 5%;
+}
+
+.technology-stack {
+  background-color: var(--tertiary-background-color);
+  color: var(--tertiary-font-color);
+  padding: 5%;
+  border-radius: 5px;
+}
+
+.information-title {
+  color: var(--tertiary-font-color);
+  margin: 0;
+  font-weight: 400;
+  font-size: 1.9rem;
 }
