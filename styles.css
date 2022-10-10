@@ -140,7 +140,7 @@ li {
 
 .title-separator {
   border: none;
-  border-top: 3px solid var(--primary-font-color);
+  border-top: 2px solid var(--primary-font-color);
   margin: 0;
   width: 230px;
   text-align: center;
@@ -162,13 +162,38 @@ li {
 .technology-stack {
   background-color: var(--tertiary-background-color);
   color: var(--tertiary-font-color);
-  padding: 5%;
+  padding: 10px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .information-title {
   color: var(--tertiary-font-color);
   margin: 0;
   font-weight: 400;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
+}
+
+.title-line {
+  border: none;
+  border-top: 4.5px #d0e3ff solid;
+  width: 150px;
+}
+
+.information-details {
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.2;
+  color: #e8e8e8;
+  padding: 20px 10px;
+}
+
+.other-skills {
+  font-size: 0.7rem;
+  margin: 0;
+}
+
+.icon-section div img {
+  width: 30px;
+  height: 30px;
 }
