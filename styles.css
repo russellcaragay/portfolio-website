@@ -194,6 +194,24 @@ li {
 }
 
 .icon-section div img {
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
+}
+
+.icon-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+  gap: 15px;
+}
+
+.icon-section div {
+  background-color: #eaeaea;
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
