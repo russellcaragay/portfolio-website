@@ -162,22 +162,24 @@ li {
 .technology-stack {
   background-color: var(--tertiary-background-color);
   color: var(--tertiary-font-color);
-  padding: 10px;
+  padding: 15px;
   border-radius: 5px;
   text-align: center;
 }
 
 .information-title {
   color: var(--tertiary-font-color);
-  margin: 0;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2rem;
+  margin-bottom: 5px;
+  margin-top: 10px;
 }
 
 .title-line {
   border: none;
   border-top: 4.5px #d0e3ff solid;
   width: 150px;
+  margin-top: 0;
 }
 
 .information-details {
@@ -203,15 +205,69 @@ li {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  padding: 0 40px;
-  gap: 15px;
+  padding: 0 35px;
+  gap: 25px;
+  margin-bottom: 30px;
 }
 
 .icon-section div {
   background-color: #eaeaea;
   border-radius: 5px;
-  padding: 5px;
+  padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Certificate Section */
+.certificate-section {
+  margin: 30px 0;
+  background-color: var(--tertiary-background-color);
+  color: var(--tertiary-font-color);
+  padding: 15px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.certificate-container {
+  background-color: #faf0d7;
+  text-align: left;
+  padding: 15px 10px;
+  border-radius: 5px;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.certificate-container p {
+  margin: 0;
+}
+
+.certificate-title {
+  color: black;
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+
+.certificate-detail {
+  color: black;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 0.6rem;
+}
+
+.long-title {
+  font-size: 0.6rem;
+}
+
+.long-detail {
+  font-size: 0.6rem;
+}
+
+.link-section {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
 }
