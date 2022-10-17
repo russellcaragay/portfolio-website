@@ -8,6 +8,8 @@
   --tertiary-font-color: #f5f3f3;
 
   --section-break-color: #1363df;
+
+  --button-color: black;
 }
 
 html {
@@ -270,4 +272,42 @@ li {
   display: flex;
   flex-flow: row wrap;
   gap: 10px;
+}
+
+/* Projects Section */
+.title-section {
+  color: var(--primary-font-color);
+}
+.project-title {
+  font-size: 2.3rem;
+}
+.project-break {
+  border-style: none;
+  border-top: 5px solid var(--primary-font-color);
+  width: 70%;
+}
+.project-all {
+  position: absolute;
+  right: 20px;
+}
+
+.project-btn {
+  border-style: none;
+  background-color: var(--button-color);
+  color: var(--background-color);
+  border-radius: 5px;
+  padding: 6px 10px;
+  font-size: 0.8rem;
+}
+
+.project-btn:hover {
+  cursor: pointer;
+}
+
+.featured-title {
+  font-size: 1.8rem;
+}
+
+.featured-projects {
+  padding: 0 40px;
 }
