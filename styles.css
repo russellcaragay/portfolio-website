@@ -311,3 +311,7 @@ li {
 .featured-projects {
   padding: 0 40px;
 }
+
+.project-card img {
+  width: 100px;
+}
