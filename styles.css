@@ -363,6 +363,11 @@ li {
   font-size: 1.3rem;
 }
 
+/* Testimonial Section */
+.testimonial-hr {
+  width: 20%;
+}
+
 @media (min-width: 375px) {
   .phone-image {
     width: 90px;
