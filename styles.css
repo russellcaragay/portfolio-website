@@ -505,6 +505,17 @@ li {
   margin: 0 3px;
 }
 
+/* Footer Section */
+.footer-section {
+  background-color: var(--tertiary-background-color);
+  color: var(--tertiary-font-color);
+  text-align: center;
+}
+
+.footer-icon i {
+  color: var(--tertiary-font-color);
+}
+
 @media (min-width: 375px) {
   .phone-image {
     width: 90px;
