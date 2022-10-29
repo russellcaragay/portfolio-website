@@ -510,10 +510,18 @@ li {
   background-color: var(--tertiary-background-color);
   color: var(--tertiary-font-color);
   text-align: center;
+  font-size: 0.7rem;
+  padding: 25px 0;
+}
+
+.footer-section p {
+  margin: 0;
 }
 
 .footer-icon i {
   color: var(--tertiary-font-color);
+  font-size: 0.6rem;
+  margin: 0 3px;
 }
 
 @media (min-width: 375px) {
