@@ -113,17 +113,18 @@ li {
   font-size: 0.9rem;
 }
 
-.link-section {
+.link-section ul {
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  width: 100%;
 }
 
 .social-icons {
   gap: 15px;
   padding: 0;
+  margin-bottom: 0;
 }
 
 .social-icons li {
@@ -143,7 +144,7 @@ li {
 .title-separator {
   border: none;
   border-top: 2px solid var(--primary-font-color);
-  margin: 0;
+  margin: 0 auto;
   width: 280px;
   text-align: center;
 }
@@ -268,9 +269,11 @@ li {
   font-size: 0.6rem;
 }
 
-.link-section {
+.certificate-link-section {
   display: flex;
   flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
@@ -544,6 +547,47 @@ li {
 }
 
 @media (min-width: 600px) {
+  h4 {
+    font-size: 0.8rem;
+  }
+  .profile-img {
+    width: 100%;
+  }
+
+  /* Summary Information */
+  .summary-page {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10% 5%;
+    gap: 30px;
+  }
+
+  .title-name {
+    font-size: 2.2rem;
+  }
+
+  .summary-information {
+    text-align: left;
+  }
+  .title-separator {
+    max-width: 250px;
+  }
+
+  .link-section {
+    margin-top: 10px;
+    width: 50%;
+  }
+
+  .title-introduction {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .link-section ul {
+    margin-top: 0;
+  }
+
+  /* Project Section */
   .project-container {
     display: flex;
     flex-wrap: wrap;
@@ -554,5 +598,39 @@ li {
   .project-card {
     width: 50%;
     box-sizing: border-box;
+  }
+
+  .title-introduction {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 800px) {
+  .title-name {
+    font-size: 2.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  /* Summary Information */
+
+  .summary-page {
+    padding: 10% 10%;
+    gap: 50px;
+  }
+  .title-name {
+    font-size: 4rem;
+  }
+  .title-introduction {
+    font-size: 1.8rem;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+  .title-dream {
+    font-size: 1rem;
+    margin-top: 15px;
+  }
+
+  .link-section {
+    margin-top: 30px;
   }
 }
