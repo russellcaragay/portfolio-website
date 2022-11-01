@@ -121,6 +121,14 @@ li {
   width: 100%;
 }
 
+.link-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
 .social-icons {
   gap: 15px;
   padding: 0;
@@ -146,12 +154,13 @@ li {
   border-top: 2px solid var(--primary-font-color);
   margin: 0 auto;
   width: 280px;
+  max-width: 300px;
   text-align: center;
 }
 
 .navigation {
   padding: 0;
-  gap: 20px;
+  gap: 10px;
   font-size: 0.8rem;
 }
 
