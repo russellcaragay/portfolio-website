@@ -119,6 +119,7 @@ li {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding-left: 0px;
 }
 
 .link-section {
@@ -131,7 +132,6 @@ li {
 
 .social-icons {
   gap: 15px;
-  padding: 0;
   margin-bottom: 0;
 }
 
@@ -152,14 +152,13 @@ li {
 .title-separator {
   border: none;
   border-top: 2px solid var(--primary-font-color);
-  margin: 0 auto;
-  width: 280px;
+  margin: 10px auto;
+  width: 200px;
   max-width: 300px;
   text-align: center;
 }
 
 .navigation {
-  padding: 0;
   gap: 10px;
   font-size: 0.8rem;
 }
@@ -580,20 +579,32 @@ li {
     text-align: left;
   }
   .title-separator {
-    max-width: 250px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .link-section {
     margin-top: 10px;
-    width: 50%;
+    width: 100%;
   }
 
   .title-introduction {
     margin-top: 0;
     margin-bottom: 10px;
   }
+
   .link-section ul {
-    margin-top: 0;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Article Section */
+  .article-break {
+    width: 20%;
   }
 
   /* Project Section */
@@ -641,5 +652,21 @@ li {
 
   .link-section {
     margin-top: 30px;
+  }
+
+  .title-separator {
+    width: 250px;
+  }
+
+  .social-link i {
+    font-size: 0.9rem;
+  }
+
+  .social-icons li {
+    width: 30px;
+    height: 30px;
+  }
+  .navigation {
+    font-size: 0.9rem;
   }
 }
