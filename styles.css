@@ -555,8 +555,15 @@ li {
 }
 
 @media (min-width: 600px) {
+  h2 {
+    font-size: 3rem;
+  }
   h4 {
     font-size: 0.8rem;
+  }
+  .profile-img-container {
+    width: 50%;
+    max-width: 300px;
   }
   .profile-img {
     width: 100%;
@@ -628,6 +635,19 @@ li {
   .title-name {
     font-size: 2.7rem;
   }
+  .profile-img-container {
+    width: 40%;
+  }
+
+  /* Skill Section */
+  .skill-section {
+    padding: 10%;
+  }
+
+  .technology-stack {
+    text-align: left;
+    display: flex;
+  }
 }
 @media (min-width: 1024px) {
   /* Summary Information */
@@ -635,6 +655,10 @@ li {
   .summary-page {
     padding: 10% 10%;
     gap: 50px;
+  }
+  .profile-img-container {
+    width: 35%;
+    min-width: 350px;
   }
   .title-name {
     font-size: 4rem;
@@ -668,5 +692,16 @@ li {
   }
   .navigation {
     font-size: 0.9rem;
+  }
+
+  /* Skill Section */
+  .skill-section {
+    padding: 5% 10%;
+  }
+  .information-section {
+    flex-grow: 1;
+  }
+  .icon-section {
+    flex-grow: 2;
   }
 }
