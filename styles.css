@@ -632,6 +632,9 @@ li {
   }
 }
 @media (min-width: 800px) {
+  h2 {
+    font-size: 3.3rem;
+  }
   .title-name {
     font-size: 2.7rem;
   }
@@ -640,13 +643,54 @@ li {
   }
 
   /* Skill Section */
-  .skill-section {
-    padding: 10%;
+  .title-line {
+    margin: 0;
+    width: 70%;
+    border-top: 10px #d0e3ff solid;
+  }
+  .information-title {
+    text-align: left;
+    margin-top: 10%;
+    width: 50%;
+    font-size: 2.1rem;
+  }
+  .information-section {
+    margin: 30px 30px 30px 20px;
+  }
+
+  .information-details {
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 20px 0;
+    width: 80%;
+  }
+  .other-skills {
+    font-size: 0.7rem;
+    margin: 0;
   }
 
   .technology-stack {
     text-align: left;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px;
+  }
+
+  .icon-section {
+    padding: 0 10px;
+    gap: 25px 35px;
+    margin-bottom: 0;
+    max-width: 320px;
+  }
+  .icon-section div img {
+    width: 40px;
+    height: 40px;
+  }
+  .icon-section div {
+    padding: 8px;
   }
 }
 @media (min-width: 1024px) {
@@ -695,6 +739,17 @@ li {
   }
 
   /* Skill Section */
+  .information-details {
+    font-weight: 300;
+    font-size: 0.9rem;
+    padding: 20px 0;
+    width: 80%;
+  }
+  .other-skills {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
   .skill-section {
     padding: 5% 10%;
   }
@@ -703,5 +758,9 @@ li {
   }
   .icon-section {
     flex-grow: 2;
+  }
+
+  .technology-stack {
+    max-width: 800px;
   }
 }
