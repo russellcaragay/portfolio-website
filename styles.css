@@ -692,6 +692,17 @@ li {
   .icon-section div {
     padding: 8px;
   }
+  /* Certificate Section */
+  .certificate-section {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    max-width: 720px;
+    margin: 20px 0 auto;
+    padding: 30px 20px;
+  }
 }
 @media (min-width: 1024px) {
   /* Summary Information */
