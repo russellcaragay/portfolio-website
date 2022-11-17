@@ -270,11 +270,10 @@ li {
 }
 
 .long-title {
-  font-size: 0.6rem;
-}
-
-.long-detail {
-  font-size: 0.6rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 80px;
 }
 
 .certificate-link-section {
@@ -652,6 +651,8 @@ li {
   .title-line {
     margin: 0;
     width: 70%;
+    min-width: 210px;
+    max-width: 280px;
     border-top: 10px #d0e3ff solid;
   }
   .information-title {
@@ -683,6 +684,7 @@ li {
     justify-content: center;
     max-width: 720px;
     padding: 30px 20px;
+    height: 420px;
   }
 
   .icon-section {
@@ -702,6 +704,32 @@ li {
   .certificate-section {
     flex-direction: row-reverse;
     margin-top: 20px;
+  }
+
+  .certificate-container {
+    background-color: #faf0d7;
+    text-align: left;
+    padding: 15px 10px;
+    border-radius: 5px;
+    width: 100px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .certificate-link-section {
+    min-width: 391px;
+  }
+
+  .certificate-information-section {
+    text-align: right;
+    margin: 0;
+  }
+  .cert-info {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: right;
   }
 }
 @media (min-width: 1024px) {
@@ -764,15 +792,19 @@ li {
   .skill-section {
     padding: 5% 10%;
   }
-  .information-section {
-    flex-grow: 1;
-  }
-  .icon-section {
-    flex-grow: 2;
-  }
 
   .technology-stack,
   .certificate-section {
     max-width: 800px;
+  }
+
+  .certificate-information-section {
+    text-align: right;
+    margin: 0;
+  }
+  .cert-info {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: right;
   }
 }
