@@ -643,6 +643,12 @@ li {
   }
 
   /* Skill Section */
+  .skill-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .title-line {
     margin: 0;
     width: 70%;
@@ -669,13 +675,13 @@ li {
     margin: 0;
   }
 
-  .technology-stack {
+  .technology-stack,
+  .certificate-section {
     text-align: left;
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 720px;
-    margin: 0 auto;
     padding: 30px 20px;
   }
 
@@ -694,14 +700,8 @@ li {
   }
   /* Certificate Section */
   .certificate-section {
-    text-align: left;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: row-reverse;
-    max-width: 720px;
-    margin: 20px 0 auto;
-    padding: 30px 20px;
+    margin-top: 20px;
   }
 }
 @media (min-width: 1024px) {
@@ -771,7 +771,8 @@ li {
     flex-grow: 2;
   }
 
-  .technology-stack {
+  .technology-stack,
+  .certificate-section {
     max-width: 800px;
   }
 }
