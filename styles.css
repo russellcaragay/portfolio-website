@@ -62,6 +62,13 @@ li {
   width: 30%;
 }
 
+.theme-icon {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  font-size: 1.3rem;
+}
+
 /* Summary Page */
 
 .summary-page {
@@ -560,6 +567,13 @@ li {
 }
 
 @media (min-width: 600px) {
+  .theme-icon {
+    position: absolute;
+    top: 60px;
+    left: 10%;
+    font-size: 1.3rem;
+  }
+
   h2 {
     font-size: 3rem;
   }
@@ -772,13 +786,62 @@ li {
     justify-content: flex-start;
   }
 
+  /* Testimonial Section */
   .testimonial-hr {
     margin: 0 auto;
     width: 100px;
   }
+
+  .testimonial-information {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px;
+    padding: 5%;
+  }
+
+  .testimonial-title {
+    text-align: left;
+    font-size: 2.3rem;
+  }
+
+  /* Contact Section */
+  #contact {
+    padding: 5%;
+  }
+  .contact-banner {
+    text-align: left;
+  }
+  .contact-information {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    padding: 10%;
+  }
+  .social-links {
+    padding: 0;
+    text-align: left;
+  }
+  .contact-title {
+    font-size: 2.1rem;
+    width: 80%;
+  }
+
+  /* Footer Section */
+  .footer-section {
+    font-size: 1rem;
+  }
+  .footer-icon i {
+    font-size: 0.8rem;
+  }
 }
 @media (min-width: 900px) {
-  #project {
+  #project,
+  .testimonial-information,
+  #contact {
     padding: 5% 10%;
   }
 }
@@ -856,5 +919,41 @@ li {
   }
   .project-card {
     border-radius: 8px;
+  }
+
+  /* Testimonial Section */
+  .testimonial-information {
+    padding: 5% 15%;
+  }
+  .card-testimonial {
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+
+  /* Contact Section */
+  .contact-information {
+    padding: 5% 10%;
+  }
+  .contact-title {
+    font-size: 2.5rem;
+    width: 80%;
+  }
+  .contact-time {
+    font-size: 1.3rem;
+  }
+  .contact-info {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    font-size: 1.2rem;
+  }
+
+  .contact-icons i {
+    font-size: 1.3rem;
+  }
+
+  .footer-section {
+    padding: 20px;
   }
 }
