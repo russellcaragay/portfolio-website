@@ -23,6 +23,11 @@ body {
   background-color: var(--background-color);
   color: var(--primary-font-color);
 }
+canvas {
+  display: block;
+  position: fixed;
+  z-index: -10;
+}
 
 h2 {
   color: var(--secondary-font-color);
@@ -295,6 +300,11 @@ li {
 }
 
 /* Projects Section */
+#project,
+#testimonial,
+#skill {
+  background-color: var(--background-color);
+}
 .title-section {
   color: var(--primary-font-color);
 }
@@ -424,6 +434,50 @@ li {
   border-radius: 5px;
   min-width: 50%;
   max-width: 300px;
+}
+
+/* Hover states transitions*/
+.social-link,
+.contact-icons i {
+  transition: all 0.2s ease-in-out;
+}
+
+.contact-icons i:hover {
+  transform: scale(1.05);
+  color: rgb(28, 27, 27);
+  text-decoration: underline;
+}
+
+.social-link:hover {
+  background-color: #b9b9b9;
+  transform: scale(1.05);
+}
+
+.navigation li,
+.github-link {
+  position: relative;
+  display: inline-block;
+}
+.navigation li:after,
+.github-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: var(--primary-font-color);
+  transition: all 0.2s ease-in-out;
+}
+.navigation li:hover:after,
+.github-link:hover:after {
+  width: 100%;
+  transform: scale(1.05);
+}
+
+.github-link:hover,
+.contact-email:hover {
+  font-weight: bold;
 }
 
 /* For Carousel */
