@@ -378,6 +378,10 @@ li {
 .project-links img {
   width: 20px;
 }
+
+.project-links a {
+  margin-left: 3px;
+}
 .project-detail {
   flex-grow: 2;
   display: flex;
@@ -838,6 +842,7 @@ li {
     justify-content: space-between;
     align-items: center;
     gap: 10px;
+    /* max-width: 820px; */
   }
   .last-card {
     justify-content: flex-start;
@@ -977,6 +982,9 @@ li {
   .project-card {
     border-radius: 8px;
   }
+  .project-container {
+    max-width: 820px;
+  }
 
   /* Testimonial Section */
   .testimonial-information {
@@ -1012,5 +1020,29 @@ li {
 
   .footer-section {
     padding: 20px;
+  }
+}
+@media (min-width: 1347px) {
+  .project-container {
+    max-width: 1250px;
+  }
+}
+
+@media (min-width: 1533px) {
+  .project-card {
+    max-width: 400px;
+  }
+  .project-container {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1940px) {
+  .project-card {
+    max-width: 420px;
+  }
+  .project-container {
+    max-width: none;
+    justify-content: center;
   }
 }
