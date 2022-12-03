@@ -1029,7 +1029,7 @@ li {
 
 @media (min-width: 1533px) {
   .project-card {
-    max-width: 400px;
+    max-width: 370px;
   }
   .project-container {
     max-width: 1400px;

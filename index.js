@@ -1,3 +1,36 @@
+
+
+
+
+// Variables for Project Images
+var diceImage = "images/projects/dice-phone";
+var diceWebImage = "images/projects/dice-web";
+
+var gcalcImage = "images/projects/gcalc-phone";
+var gcalcWebImage = "images/projects/gcalc-web";
+
+var pianoImage = "images/projects/piano-phone";
+var pianoWebImage = "images/projects/piano-web";
+
+var pomodoroImage = "images/projects/pomodoro-phone";
+var pomodoroWebImage = "images/projects/pomodoro-web";
+
+var rakkersImage = "images/projects/rakkers-phone";
+var rakkerWebImage = "images/projects/rakker-web";
+
+var simonImage = "images/projects/simon-phone";
+var simonWebImage = "images/projects/simon-web";
+
+var phoneArray = [gcalcImage,rakkersImage,pomodoroImage,diceImage,simonImage,pianoImage];
+// for(var i = 0; i<phoneArray.length; i++){
+//   document.querySelectorAll(".phone-image")[i].src= phoneArray[i] + "-dark.png";
+// };
+//var try1 = gcalcImage +"dark.png";
+
+//document.querySelector("#gcalc-phone").src="images/projects/gcalc-phone-dark.png";
+
+// Particle Js Configuration
+
 particlesJS("particles-js",{
     "particles": {
       "number": {
