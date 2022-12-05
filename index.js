@@ -1,36 +1,54 @@
-
-
-
+var documentStyle = document.documentElement.style;
 
 // Variables for Project Images
-var diceImage = "images/projects/dice-phone";
-var diceWebImage = "images/projects/dice-web";
+var diceImage = "images/projects/dice";
+var gcalcImage = "images/projects/gcalc";
+var pianoImage = "images/projects/piano";
+var pomodoroImage = "images/projects/pomodoro";
+var rakkersImage = "images/projects/rakkers";
+var simonImage = "images/projects/simon";
 
-var gcalcImage = "images/projects/gcalc-phone";
-var gcalcWebImage = "images/projects/gcalc-web";
+var projectImageArray = [gcalcImage,rakkersImage,pomodoroImage,diceImage,simonImage,pianoImage];
 
-var pianoImage = "images/projects/piano-phone";
-var pianoWebImage = "images/projects/piano-web";
 
-var pomodoroImage = "images/projects/pomodoro-phone";
-var pomodoroWebImage = "images/projects/pomodoro-web";
-
-var rakkersImage = "images/projects/rakkers-phone";
-var rakkerWebImage = "images/projects/rakker-web";
-
-var simonImage = "images/projects/simon-phone";
-var simonWebImage = "images/projects/simon-web";
-
-var phoneArray = [gcalcImage,rakkersImage,pomodoroImage,diceImage,simonImage,pianoImage];
-// for(var i = 0; i<phoneArray.length; i++){
-//   document.querySelectorAll(".phone-image")[i].src= phoneArray[i] + "-dark.png";
+//---WORKING LOOP FOR CHANGING MODE TO DARK MODE
+// for(var i = 0; i<projectImageArray.length; i++){
+//   document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
+//   document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-dark.png";
 // };
 //var try1 = gcalcImage +"dark.png";
 
 //document.querySelector("#gcalc-phone").src="images/projects/gcalc-phone-dark.png";
 
-// Particle Js Configuration
 
+function lightMode(){
+  documentStyle.setProperty('--background-color', '#fbfbfb');
+  documentStyle.setProperty('--secondary-background-color', '#edeff0');
+  documentStyle.setProperty('--tertiary-background-color', '#112b3c');
+
+  documentStyle.setProperty('--primary-font-color', 'black');
+  documentStyle.setProperty('--secondary-font-color', '#190a37');
+  documentStyle.setProperty('--tertiary-font-color', '#f5f3f3');
+
+  documentStyle.setProperty('--section-break-color', '#1363df');
+
+
+}
+
+function darkMode(){
+  documentStyle.setProperty('--background-color', '#101010');
+  documentStyle.setProperty('--secondary-background-color', '#112B3C');
+  documentStyle.setProperty('--tertiary-background-color', '#EDEFF0');
+
+  documentStyle.setProperty('--primary-font-color', '#F5F5F5');
+  documentStyle.setProperty('--secondary-font-color', '#F2F2F2');
+  documentStyle.setProperty('--tertiary-font-color', '#121212');
+
+  documentStyle.setProperty('--section-break-color', '#C9DCFB');
+
+}
+
+// Particle Js Configuration
 particlesJS("particles-js",{
     "particles": {
       "number": {

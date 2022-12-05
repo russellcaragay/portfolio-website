@@ -8,8 +8,6 @@
   --tertiary-font-color: #f5f3f3;
 
   --section-break-color: #1363df;
-
-  --button-color: black;
 }
 
 html {
@@ -319,18 +317,6 @@ li {
 .project-all {
   position: absolute;
   right: 20px;
-}
-
-.project-btn {
-  border-style: none;
-  background-color: var(--button-color);
-  color: var(--background-color);
-  border-radius: 5px;
-  padding: 6px 10px;
-  font-size: 0.8rem;
-}
-.project-btn:hover {
-  cursor: pointer;
 }
 
 .featured-title {
