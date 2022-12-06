@@ -1,4 +1,5 @@
 var documentStyle = document.documentElement.style;
+var hours = new Date().getHours();
 
 // Variables for Project Images
 var diceImage = "images/projects/dice";
@@ -12,15 +13,42 @@ var projectImageArray = [gcalcImage,rakkersImage,pomodoroImage,diceImage,simonIm
 
 var ParticleColor = "#000000";
 ParticleJS()
-//---WORKING LOOP FOR CHANGING MODE TO DARK MODE
-// for(var i = 0; i<projectImageArray.length; i++){
-//   document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
-//   document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-dark.png";
-// };
-//var try1 = gcalcImage +"dark.png";
 
-//document.querySelector("#gcalc-phone").src="images/projects/gcalc-phone-dark.png";
 
+// system will automatically change the theme
+if (hours >= 6 && hours <= 18){
+  var theme,mockupTheme = "day";
+  lightMode();
+}
+
+else{
+  var theme,mockupTheme = "night";
+  darkMode();
+}
+
+// Event Listener for Changing Themes
+document.querySelector('.theme-icon').addEventListener("click",function(){
+  if (theme == "night"){
+    theme = "day"
+    lightMode();
+  }
+  else {
+    theme = "night"
+    darkMode();
+  }
+});
+
+
+document.querySelector(".mockup-theme").addEventListener("click",function(){
+  if (mockupTheme == "day"){
+    mockupTheme ="night";
+    mockupThemeChanger("night");
+  }
+  else{
+    mockupTheme = "day";
+    mockupThemeChanger("day");
+  }
+});
 
 function lightMode(){
   ParticleColor = "#000000";
@@ -35,11 +63,12 @@ function lightMode(){
 
   documentStyle.setProperty('--section-break-color', '#1363df');
   documentStyle.setProperty('--skill-section-break-color', '#d0e3ff');
+ 
+  document.querySelector(".theme-icon").classList.remove("fa-moon");
+  document.querySelector(".theme-icon").classList.add("fa-sun");
+  mockupTheme = "day";
   ParticleJS()
-  for(var i = 0; i<projectImageArray.length; i++){
-    document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-light.png";
-    document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-light.png";
-  };
+  mockupThemeChanger("day");
 
 }
 
@@ -57,16 +86,31 @@ function darkMode(){
 
   documentStyle.setProperty('--section-break-color', '#C9DCFB');
   documentStyle.setProperty('--skill-section-break-color', 'black');
-  ParticleJS()
 
-  for(var i = 0; i<projectImageArray.length; i++){
-    document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
-    document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-dark.png";
-  };
+  document.querySelector(".theme-icon").classList.remove("fa-sun");
+  document.querySelector(".theme-icon").classList.add("fa-moon");
+  mockupTheme = "night";
+  ParticleJS()
+  mockupThemeChanger("night");
+ 
 }
 
-// Particle Js Configuration
+function mockupThemeChanger(theme){
+  if (theme == "day"){
+    for(var i = 0; i<projectImageArray.length; i++){
+      document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-light.png";
+      document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-light.png";
+    };
+  }
+  else {
+    for(var i = 0; i<projectImageArray.length; i++){
+      document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
+      document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-dark.png";
+    };
+  }
 
+}
+// Particle Js Configuration
 function ParticleJS(){
 particlesJS("particles-js",{
     "particles": {
