@@ -10,7 +10,8 @@ var simonImage = "images/projects/simon";
 
 var projectImageArray = [gcalcImage,rakkersImage,pomodoroImage,diceImage,simonImage,pianoImage];
 
-
+var ParticleColor = "#000000";
+ParticleJS()
 //---WORKING LOOP FOR CHANGING MODE TO DARK MODE
 // for(var i = 0; i<projectImageArray.length; i++){
 //   document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
@@ -22,6 +23,7 @@ var projectImageArray = [gcalcImage,rakkersImage,pomodoroImage,diceImage,simonIm
 
 
 function lightMode(){
+  ParticleColor = "#000000";
   documentStyle.setProperty('--background-color', '#fbfbfb');
   documentStyle.setProperty('--secondary-background-color', '#edeff0');
   documentStyle.setProperty('--tertiary-background-color', '#112b3c');
@@ -29,26 +31,43 @@ function lightMode(){
   documentStyle.setProperty('--primary-font-color', 'black');
   documentStyle.setProperty('--secondary-font-color', '#190a37');
   documentStyle.setProperty('--tertiary-font-color', '#f5f3f3');
+  documentStyle.setProperty('--skill-detail-font-color', '#e8e8e8');
 
   documentStyle.setProperty('--section-break-color', '#1363df');
-
+  documentStyle.setProperty('--skill-section-break-color', '#d0e3ff');
+  ParticleJS()
+  for(var i = 0; i<projectImageArray.length; i++){
+    document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-light.png";
+    document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-light.png";
+  };
 
 }
 
 function darkMode(){
+  ParticleColor = "#FFFFFF";
+
   documentStyle.setProperty('--background-color', '#101010');
   documentStyle.setProperty('--secondary-background-color', '#112B3C');
-  documentStyle.setProperty('--tertiary-background-color', '#EDEFF0');
+  documentStyle.setProperty('--tertiary-background-color', '#D6E4E5');
 
   documentStyle.setProperty('--primary-font-color', '#F5F5F5');
   documentStyle.setProperty('--secondary-font-color', '#F2F2F2');
   documentStyle.setProperty('--tertiary-font-color', '#121212');
+  documentStyle.setProperty('--skill-detail-font-color', 'black');
 
   documentStyle.setProperty('--section-break-color', '#C9DCFB');
+  documentStyle.setProperty('--skill-section-break-color', 'black');
+  ParticleJS()
 
+  for(var i = 0; i<projectImageArray.length; i++){
+    document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
+    document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-dark.png";
+  };
 }
 
 // Particle Js Configuration
+
+function ParticleJS(){
 particlesJS("particles-js",{
     "particles": {
       "number": {
@@ -59,13 +78,13 @@ particlesJS("particles-js",{
         }
       },
       "color": {
-        "value": "#000000"
+        "value": ParticleColor
       },
       "shape": {
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#000000"
+          "color": ParticleColor
         },
         "polygon": {
           "nb_sides": 5
@@ -99,7 +118,7 @@ particlesJS("particles-js",{
       "line_linked": {
         "enable": true,
         "distance": 120,
-        "color": "#000000",
+        "color": ParticleColor,
         "opacity": 0.3,
         "width": 1
       },
@@ -165,3 +184,4 @@ particlesJS("particles-js",{
       "background_size": "cover"
     }
   })
+}

@@ -6,8 +6,10 @@
   --primary-font-color: black;
   --secondary-font-color: #190a37;
   --tertiary-font-color: #f5f3f3;
+  --skill-detail-font-color: #e8e8e8;
 
   --section-break-color: #1363df;
+  --skill-section-break-color: #d0e3ff;
 }
 
 html {
@@ -160,6 +162,11 @@ li {
 
 .social-link i {
   font-size: 0.7rem;
+  color: black;
+}
+
+.social-link a:visited {
+  color: black;
 }
 
 .title-separator {
@@ -201,7 +208,7 @@ li {
 
 .title-line {
   border: none;
-  border-top: 4.5px #d0e3ff solid;
+  border-top: 4.5px var(--skill-section-break-color) solid;
   width: 150px;
   margin-top: 0;
 }
@@ -210,7 +217,7 @@ li {
   font-weight: 300;
   font-size: 0.8rem;
   line-height: 1.2;
-  color: #e8e8e8;
+  color: var(--skill-detail-font-color);
   padding: 20px 10px;
 }
 
@@ -235,7 +242,7 @@ li {
 }
 
 .icon-section div {
-  background-color: #eaeaea;
+  background-color: #c7c6c6;
   border-radius: 5px;
   padding: 8px;
   display: flex;
@@ -254,7 +261,7 @@ li {
 }
 
 .certificate-container {
-  background-color: #faf0d7;
+  background-color: #ebcb7a;
   text-align: left;
   padding: 15px 10px;
   border-radius: 5px;
@@ -296,7 +303,10 @@ li {
   justify-content: center;
   gap: 10px;
 }
-
+.certificate-link:link,
+.certificate-link:visited {
+  color: black;
+}
 /* Projects Section */
 #project,
 #testimonial,
@@ -446,6 +456,7 @@ li {
 .github-link {
   position: relative;
   display: inline-block;
+  color: var(--primary-font-color);
 }
 .navigation li:after,
 .github-link::after {
@@ -586,11 +597,15 @@ li {
 
 /* Footer Section */
 .footer-section {
-  background-color: var(--tertiary-background-color);
-  color: var(--tertiary-font-color);
+  background-color: #112b3c;
+  color: #f5f3f3;
   text-align: center;
   font-size: 0.7rem;
   padding: 25px 0;
+}
+
+.footer-section a {
+  color: #f5f3f3;
 }
 
 .footer-section p {
@@ -598,7 +613,7 @@ li {
 }
 
 .footer-icon i {
-  color: var(--tertiary-font-color);
+  color: #f5f3f3;
   font-size: 0.6rem;
   margin: 0 3px;
 }
@@ -719,7 +734,7 @@ li {
     width: 70%;
     min-width: 210px;
     max-width: 280px;
-    border-top: 10px #d0e3ff solid;
+    border-top: 10px var(--skill-section-break-color) solid;
   }
   .information-title {
     text-align: left;
@@ -773,7 +788,6 @@ li {
   }
 
   .certificate-container {
-    background-color: #faf0d7;
     text-align: left;
     padding: 15px 10px;
     border-radius: 5px;
