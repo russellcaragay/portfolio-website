@@ -35,7 +35,7 @@ document.querySelector('.theme-icon').addEventListener("click",function(){
     theme = "day"
     lightMode();
   }
-  else {
+  else if (theme == "day")  {
     theme = "night"
     darkMode();
   }
