@@ -20,12 +20,14 @@ ParticleJS()
 
 // system will automatically change the theme
 if (hours >= 6 && hours <= 18){
-  var theme,mockupTheme = "day";
+  var  theme = "day";
+  var mockupTheme ="day";
   lightMode();
 }
 
 else{
-  var theme,mockupTheme = "night";
+  var  theme = "night";
+  var mockupTheme = "night";
   darkMode();
 }
 
@@ -35,7 +37,7 @@ document.querySelector('.theme-icon').addEventListener("click",function(){
     theme = "day"
     lightMode();
   }
-  else if (theme == "day")  {
+  else  {
     theme = "night"
     darkMode();
   }
