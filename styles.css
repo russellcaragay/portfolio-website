@@ -534,30 +534,30 @@ li {
   position: relative;
   min-width: 50%;
   max-width: 300px;
-  height: 250px;
+  height: 300px;
 }
 
 .testimonial-detail > .testimonial-card {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 10% 20px 20px 20px;
+  padding: 8% 20px 20px 20px;
   vertical-align: middle;
   opacity: 0;
-  animation: carousel 20s infinite;
+  animation: carousel 60s infinite;
 }
 
 .testimonial-card:nth-child(2) {
-  animation-delay: 5s;
-}
-.testimonial-card:nth-child(3) {
-  animation-delay: 10s;
-}
-.testimonial-card:nth-child(4) {
   animation-delay: 15s;
 }
+.testimonial-card:nth-child(3) {
+  animation-delay: 30s;
+}
+.testimonial-card:nth-child(4) {
+  animation-delay: 45s;
+}
 .testimonial-card:nth-child(5) {
-  animation-delay: 20s;
+  animation-delay: 60s;
 }
 
 .card-testimonial {
