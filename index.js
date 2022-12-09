@@ -68,8 +68,8 @@ function lightMode(){
   documentStyle.setProperty('--section-break-color', '#1363df');
   documentStyle.setProperty('--skill-section-break-color', '#d0e3ff');
  
-  document.querySelector(".theme-icon").classList.remove("fa-moon");
-  document.querySelector(".theme-icon").classList.add("fa-sun");
+  document.querySelector(".theme-icon").classList.remove("fa-sun");
+  document.querySelector(".theme-icon").classList.add("fa-moon");
   
   mockupTheme = "day";
   ParticleJS()
@@ -90,8 +90,8 @@ function darkMode(){
   documentStyle.setProperty('--section-break-color', '#C9DCFB');
   documentStyle.setProperty('--skill-section-break-color', 'black');
 
-  document.querySelector(".theme-icon").classList.remove("fa-sun");
-  document.querySelector(".theme-icon").classList.add("fa-moon");
+  document.querySelector(".theme-icon").classList.remove("fa-moon");
+  document.querySelector(".theme-icon").classList.add("fa-sun");
  
   mockupTheme = "night";
   ParticleJS()
