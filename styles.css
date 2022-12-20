@@ -385,7 +385,8 @@ li {
   transition: all 0.2s ease-in-out;
 }
 
-.project-links a:hover {
+.project-links a:hover,
+.projectLink-btn:hover {
   cursor: pointer;
   transform: scale(1.03);
 }
