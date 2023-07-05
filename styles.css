@@ -786,8 +786,8 @@ li {
   .information-details {
     font-weight: 300;
     font-size: 0.8rem;
-    padding: 20px 0;
-    width: 80%;
+    padding: 10px 0;
+    width: 90%;
   }
   .other-skills {
     font-size: 0.7rem;
@@ -802,7 +802,7 @@ li {
     justify-content: center;
     max-width: 720px;
     padding: 30px 20px;
-    height: 420px;
+    height: 470px;
   }
 
   .icon-section {
@@ -1002,7 +1002,7 @@ li {
 
   .technology-stack,
   .certificate-section {
-    max-width: 800px;
+    max-width: 850px;
   }
 
   .certificate-information-section {
