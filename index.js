@@ -1,5 +1,3 @@
-
-
 // Variables for Project Images
 var diceImage = "images/projects/dice";
 var gcalcImage = "images/projects/gcalc";
@@ -18,103 +16,99 @@ var ParticleColor = "#000000";
 ParticleJS()
 
 
-// system will automatically change the theme
-if (hours >= 6 && hours <= 18){
-  var  theme = "day";
-  var mockupTheme ="day";
-  lightMode();
-}
+// System will automatically change the theme
+var theme, mockupTheme;
 
-else{
-  var  theme = "night";
-  var mockupTheme = "night";
+if (hours >= 6 && hours <= 18) {
+  theme = "day";
+  mockupTheme = "day";
+  lightMode();
+} else {
+  theme = "night";
+  mockupTheme = "night";
   darkMode();
 }
 
+
 // Event Listener for Changing Themes
-document.querySelector('.theme-icon').addEventListener("click",function(){
-  if (theme == "night"){
-    theme = "day"
+document.querySelector(".theme-icon").addEventListener("click", function () {
+  if (theme === "night") {
+    theme = "day";
     lightMode();
-  }
-  else  {
-    theme = "night"
+  } else {
+    theme = "night";
     darkMode();
   }
 });
 
+
 // Changing the Mockup Theme only
-document.querySelector(".mockup-theme").addEventListener("click",function(){
-  if (mockupTheme == "day"){
-    mockupTheme ="night";
+document.querySelector(".mockup-theme").addEventListener("click", function () {
+  if (mockupTheme === "day") {
+    mockupTheme = "night";
     mockupThemeChanger("night");
-  }
-  else{
+  } else {
     mockupTheme = "day";
     mockupThemeChanger("day");
   }
 });
 
-// Function for Light mode
-function lightMode(){
+
+// Function for Light Mode
+function lightMode() {
   ParticleColor = "#000000";
-  documentStyle.setProperty('--background-color', '#fbfbfb');
-  documentStyle.setProperty('--secondary-background-color', '#edeff0');
-  documentStyle.setProperty('--tertiary-background-color', '#112b3c');
-  documentStyle.setProperty('--primary-font-color', 'black');
-  documentStyle.setProperty('--secondary-font-color', '#190a37');
-  documentStyle.setProperty('--tertiary-font-color', '#f5f3f3');
-  documentStyle.setProperty('--skill-detail-font-color', '#e8e8e8');
-  documentStyle.setProperty('--section-break-color', '#1363df');
-  documentStyle.setProperty('--skill-section-break-color', '#d0e3ff');
- 
+  documentStyle.setProperty("--background-color", "#fbfbfb");
+  documentStyle.setProperty("--secondary-background-color", "#edeff0");
+  documentStyle.setProperty("--tertiary-background-color", "#112b3c");
+  documentStyle.setProperty("--primary-font-color", "black");
+  documentStyle.setProperty("--secondary-font-color", "#190a37");
+  documentStyle.setProperty("--tertiary-font-color", "#f5f3f3");
+  documentStyle.setProperty("--skill-detail-font-color", "#e8e8e8");
+  documentStyle.setProperty("--section-break-color", "#1363df");
+  documentStyle.setProperty("--skill-section-break-color", "#d0e3ff");
+
   document.querySelector(".theme-icon").classList.remove("fa-sun");
   document.querySelector(".theme-icon").classList.add("fa-moon");
-  
-  mockupTheme = "day";
-  ParticleJS()
-  mockupThemeChanger("day");
 
+  mockupTheme = "day";
+  ParticleJS();
+  mockupThemeChanger("day");
 }
 
+
 // Function for Dark Mode
-function darkMode(){
+function darkMode() {
   ParticleColor = "#FFFFFF";
-  documentStyle.setProperty('--background-color', '#101010');
-  documentStyle.setProperty('--secondary-background-color', '#112B3C');
-  documentStyle.setProperty('--tertiary-background-color', '#D6E4E5');
-  documentStyle.setProperty('--primary-font-color', '#F5F5F5');
-  documentStyle.setProperty('--secondary-font-color', '#F2F2F2');
-  documentStyle.setProperty('--tertiary-font-color', '#121212');
-  documentStyle.setProperty('--skill-detail-font-color', 'black');
-  documentStyle.setProperty('--section-break-color', '#C9DCFB');
-  documentStyle.setProperty('--skill-section-break-color', 'black');
+  documentStyle.setProperty("--background-color", "#101010");
+  documentStyle.setProperty("--secondary-background-color", "#112B3C");
+  documentStyle.setProperty("--tertiary-background-color", "#D6E4E5");
+  documentStyle.setProperty("--primary-font-color", "#F5F5F5");
+  documentStyle.setProperty("--secondary-font-color", "#F2F2F2");
+  documentStyle.setProperty("--tertiary-font-color", "#121212");
+  documentStyle.setProperty("--skill-detail-font-color", "black");
+  documentStyle.setProperty("--section-break-color", "#C9DCFB");
+  documentStyle.setProperty("--skill-section-break-color", "black");
 
   document.querySelector(".theme-icon").classList.remove("fa-moon");
   document.querySelector(".theme-icon").classList.add("fa-sun");
- 
+
   mockupTheme = "night";
-  ParticleJS()
+  ParticleJS();
   mockupThemeChanger("night");
- 
 }
 
-// Function in changing the mockup theme
-function mockupThemeChanger(theme){
-  if (theme == "day"){
-    for(var i = 0; i<projectImageArray.length; i++){
-      document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-light.png";
-      document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-light.png";
-    };
-  }
-  else {
-    for(var i = 0; i<projectImageArray.length; i++){
-      document.querySelectorAll(".phone-image")[i].src= projectImageArray[i] + "-phone-dark.png";
-      document.querySelectorAll(".web-mockup")[i].src= projectImageArray[i] + "-web-dark.png";
-    };
-  }
 
+// Function for changing the mockup theme
+function mockupThemeChanger(theme) {
+  for (let i = 0; i < projectImageArray.length; i++) {
+    document.querySelectorAll(".phone-image")[i].src =
+      projectImageArray[i] + (theme === "day" ? "-phone-light.png" : "-phone-dark.png");
+
+    document.querySelectorAll(".web-mockup")[i].src =
+      projectImageArray[i] + (theme === "day" ? "-web-light.png" : "-web-dark.png");
+  }
 }
+
 
 // Particle Js Configuration
 function ParticleJS(){
