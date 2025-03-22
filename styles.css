@@ -221,7 +221,7 @@ li {
 
 .information-details {
   font-weight: 300;
-  font-size: 0.8rem;
+  font-size: 0.77rem;
   line-height: 1.2;
   color: var(--skill-detail-font-color);
   padding: 20px 10px;
@@ -662,6 +662,9 @@ li {
 }
 
 @media (min-width: 600px) {
+  .subtitle-awards{
+    font-size: 0.80rem;
+  }
   .theme-icon {
     position: absolute;
     top: 60px;
@@ -758,6 +761,9 @@ li {
   .profile-img-container {
     width: 40%;
   }
+  .subtitle-awards{
+    font-size: 0.80rem;
+  }
 
   /* Skill Section */
   .skill-section {
@@ -785,7 +791,7 @@ li {
 
   .information-details {
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 0.77rem;
     padding: 10px 0;
     width: 90%;
   }
@@ -963,6 +969,9 @@ li {
   h4 {
     font-size: 1.3rem;
   }
+  .subtitle-awards{
+    font-size: 0.90rem;
+  }
   .title-dream {
     font-size: 1rem;
     margin-top: 15px;
@@ -987,7 +996,7 @@ li {
   /* Skill Section */
   .information-details {
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 0.87rem;
     padding: 20px 0;
     width: 80%;
   }

@@ -4,61 +4,89 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Russell</title>
     
-    <!-- Google Fonts and CSS stylesheet -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Russell</title>
+
+    <!-- Google Fonts and CSS Stylesheet -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="styles.css">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-    <link rel="shortcut icon" type="image/png" href="images/faviconpublic/image/profile.png"/>
-    
+    <link rel="icon" href="images/favicon/profile.png">
 </head>
+    
 <body>
     <div id="particles-js" width="100%" height="100%">
     <canvas class="particles-js-canvas-el" width="1583" height="497" style="width: 100%; height: 100%;"></canvas></div>
     
     <main>
-
         <!-- Summary Article -->
         <article class="summary-page">
-            <i class="theme-icon fa-solid fa-moon"></i>
-            <section  class="profile-img-container">
-                <img class = "profile-img" src="images/profile.jpg" alt="profile-img">
+            <!-- Theme Icon -->
+            <i class="theme-icon fa-solid fa-moon" aria-hidden="true"></i>
+        
+            <!-- Profile Image Section -->
+            <section class="profile-img-container">
+                <img class="profile-img" src="images/profile.jpg" alt="Russell's Profile Picture">
             </section>
-            <section class="summary-information" >
+        
+            <!-- Summary Information -->
+            <section class="summary-information">
                 <h1 class="title-name">Russell</h1>
-                <h3 class="title-introduction">A 22 years old student</h3>
-                
-                <h4>Computer Engineer (Graduating)</h4>
-                
+                <h3 class="title-introduction">Quality Assurance Engineer</h3>
+                <h4>Computer Engineering Graduate</h4>
+                <i class="subtitle-awards">Cum Laude & Top 2 in the CPE Department</i>
+        
+                <!-- Social Media Links -->
+                <section class="link-section">
+                    <ul class="social-icons">
+                        <li class="social-link">
+                            <a href="https://github.com/russellcaragay" target="_blank" aria-label="GitHub">
+                                <i class="fa-brands fa-github"></i>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="https://medium.com/@caragayrussell" target="_blank" aria-label="Medium">
+                                <i class="fa-brands fa-medium"></i>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="https://www.linkedin.com/in/john-russell-caragay-324904229/" target="_blank" aria-label="LinkedIn">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="social-link">
+                            <a href="mailto:caragayrussell@gmail.com" target="_blank" aria-label="Email">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <hr class="title-separator">
+                </section>
+        
+                <!-- Navigation Menu -->
                 <nav>
-                    <section class="link-section">
-                        <ul class="social-icons">
-                            <li class="social-link"><a href="https://github.com/russellcaragay" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                            <li class="social-link"><a href="https://medium.com/@caragayrussell" target="_blank"><i class="fa-brands fa-medium"></i></a></li>
-                            <li class="social-link"><a href="https://www.linkedin.com/in/john-russell-caragay-324904229/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a></li>
-                            <li class="social-link"><a href="mailto: caragayrussell@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
-                        </ul>
-                        <hr class="title-separator">
-                        <ul class="navigation">
-                            <li><a href="#skill">About</a></li>
-                            <li><a href="#project">Works</a></li>
-                            <li><a href="#contact">Contact</a></li>
-                            <li><a href="resume/Caragay,JohnRussell_Resume.pdf" target="_blank"><span class="resume-link">RESUME</span></a></li>
-                        </ul>
-                    </section>
+                    <ul class="navigation">
+                        <li><a href="#skill">About</a></li>
+                        <li><a href="#project">Works</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li>
+                            <a href="resume/Caragay,JohnRussell_Resume.pdf" target="_blank">
+                                <span class="resume-link">RESUME</span>
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
             </section>
-        </article>
+        </article>        
         <hr class="article-break">
 
         <!-- Skills Article -->
@@ -71,30 +99,24 @@
                     <section class="information-section">
                         <h2 class="information-title">TECHNOLOGY STACK</h2>
                         <hr class="title-line">
-                        <p class="information-details"> Being immersed in the technology environment made me believe that one of the most important skills is to be a lifelong learner. The following are the experiences I have acquired throughout my journey: <br>
-                           <br><span class="other-skills"> - Experienced in programming languages such as <strong> Python and JavaScript</strong><br>
-                            - Operated Data Analysis and Visualization using  <strong>PowerBi, Microsoft Excel, Google Spreadsheets, SQL, and Python </strong> (<i>NumPy, Pandas, Seaborn, and Matplotlib</i>)<br>
-                            - Built static Front-End Projects using  <strong>HTML5, CSS3, JavaScript, and Bootstrap 5.</strong> <br>
-                            - Developed Back-End Projects using <strong>Node.js, and Express.js.</strong><br>
-                            - Utilized technology collaborative tools such as <strong>Git, Figma, and Trello.</strong><br>
-                            - Managed Database Systems using  <strong>MySQL.</strong> <br>
-                            - Built Embedded Systems using  <strong>TinkerCAD, and Arduino microcontroller.</strong> <br>
-                            - Experienced in Android Development using <strong>Android Studio (Java, and SQLite).</strong> <br>
-                            - Proficiency in <strong>Microsoft Office and Google Workspace </strong> <br>
+                        <p class="information-details"> Being immersed in the technology environment has made me believe that one of the most important skills is being a lifelong learner. Below are the experiences I have gained throughout my journey: <br>
+                            <br><span class="other-skills"></span> <strong>※Testing:</strong> Strong experience in manual testing, including system analysis and defect tracking.<br>
+                            <strong>※ Automation:</strong> Proficient in using Selenium with PyTest, Robot Framework, and Postman for API testing.<br>
+                            <strong>※ CD & Version Control:</strong> Experienced in Git, Jenkins, and GitHub for test automation workflows.<br>
+                            <strong>※ Bug Tracking & Project Management:</strong> Familiar with Jira, Trello, and Backlog for test management and collaboration.<br>
+                            <strong>※ Data Analysis & Visualization:</strong> Experienced in Power BI, SQL, Microsoft Excel, and Python libraries<br>
+                            <strong>※ Basic Front-End & Database Management:</strong> Knowledgeable in HTML, CSS, JavaScript, Bootstrap, and MySQL for testing-related tasks.<br>
                         </span></p>
                     </section>
                     <section class="icon-section">
                         <div><img src="images/icons/python.png" alt="Python"></div>
-                        <div><img src="images/icons/html.png" alt="html5"></div>
-                        <div><img src="images/icons/css.png" alt="css3"></div>
-                        <div><img src="images/icons/javascript.png" alt="javascript"></div>
-                        <div><img src="images/icons/nodejs.png" alt="javascript"></div>
-                        <div><img src="images/icons/bootstrap.png" alt="bootstrap"></div>
-                        <div><img src="images/icons/figma.png" alt="figma"></div>
-                        <div><img src="images/icons/android.png" alt="android-development"></div>
-                        <div><img src="images/icons/java.png" alt="java"></div>
-                        <div><img src="images/icons/tinkercad.png" alt="tinkercad"></div>
-                        <div><img src="images/icons/arduino.png" alt="arduino"></div>
+                        <div><img src="images/icons/selenium.png" alt="Selenium"></div>
+                        <div><img src="images/icons/robot.png" alt="Robot"></div>
+                        <div><img src="images/icons/postman.png" alt="Postman"></div>
+                        <div><img src="images/icons/jenkins.svg" alt="Jenkins"></div>
+                        <div><img src="images/icons/jira.png" alt="Jira"></div>
+                        <div><img src="images/icons/bitbucket.webp" alt="bitbucket"></div>
+                        <div><img src="images/icons/sql.png" alt="sql"></div>
                         <div><img src="images/icons/github.png" alt="github"></div>
                         <div><img src="images/icons/git.png" alt="git"></div>
                         <div><img src="images/icons/trello.png" alt="Trello"></div>
@@ -106,10 +128,71 @@
                             <h2 class="information-title cert-info">CERTIFICATES</h2>
                             <hr class="title-line cert-info cert-line">
                             <p class="information-details cert-info"> 
-                                Here all the certificates that I have acquired since my first year. These certificates are from our school and online courses that I took.
+                                Here are all the important certificates I have acquired throughout my journey. These certificates come from my school, company, and online courses I have completed.
                             </p>
                     </section>
                     <section class="certificate-link-section">
+                        
+                        <div class="certificate-container">
+                            <div class="certificate-information">
+                                <p class="certificate-title long-title">Robot Framework with Python- Selenium/API Automation</p>
+                                <p class="certificate-detail">Udemy</p>
+                            </div>
+                            <div class="link-section">
+                                <a href="https://www.udemy.com/certificate/UC-904e221e-0b6d-483d-aeef-c491503f1553/" class="certificate-link" target="_blank">></a>
+                            </div>
+                        </div>
+
+                        <div class="certificate-container">
+                            <div class="certificate-information">
+                                <p class="certificate-title long-title">Selenium Webdriver with PYTHON from Scratch + Frameworks</p>
+                                <p class="certificate-detail">Udemy</p>
+                            </div>
+                            <div class="link-section">
+                                <a href="https://www.udemy.com/certificate/UC-fdefae4d-1d57-4ef1-bd67-d622e51c7f78/" class="certificate-link" target="_blank">></a>
+                            </div>
+                        </div>
+
+                        <div class="certificate-container">
+                            <div class="certificate-information">
+                                <p class="certificate-title long-title">Cum Laude Certificate</p>
+                                <p class="certificate-detail">TIP Manila</p>
+                            </div>
+                            <div class="link-section">
+                                <a href="https://media.licdn.com/dms/image/v2/D562DAQERo6awRcwBzg/profile-treasury-image-shrink_800_800/B56ZW_WjFOHsAY-/0/1742672117709?e=1743278400&v=beta&t=r7QYb-bnBkQW3I0D39W1Gut-dfpFD2wKMeb0qEqNpMM" class="certificate-link" target="_blank">></a>
+                            </div>
+                        </div>
+
+                        <div class="certificate-container">
+                            <div class="certificate-information">
+                                <p class="certificate-title long-title">Top 2 in the CPE Department Certificate</p>
+                                <p class="certificate-detail">TIP Manila</p>
+                            </div>
+                            <div class="link-section">
+                                <a href="https://media.licdn.com/dms/image/v2/D562DAQHNkXgoBsDlcw/profile-treasury-image-shrink_800_800/B56ZW_WeAgGoAY-/0/1742672096812?e=1743278400&v=beta&t=1uK42yPJ4MH0Cnppz_ZKe9P3xMuSrN3VzgPVKGTnXDY" class="certificate-link" target="_blank">></a>
+                            </div>
+                        </div>
+
+                        <div class="certificate-container">
+                            <div class="certificate-information">
+                                <p class="certificate-title long-title">Best in Software Development</p>
+                                <p class="certificate-detail">TIP Manila</p>
+                            </div>
+                            <div class="link-section">
+                                <a href="https://media.licdn.com/dms/image/v2/D562DAQFrcckJUcTOEw/profile-treasury-image-shrink_800_800/B56ZW_WglTGUAY-/0/1742672107915?e=1743278400&v=beta&t=KRH7jIGjuMZYwMEe-Gc8Qakd4_XyrjjwZEP_mllx6kw" class="certificate-link" target="_blank">></a>
+                            </div>
+                        </div>
+
+                        <div class="certificate-container">
+                            <div class="certificate-information">
+                                <p class="certificate-title long-title">Best in Data Science</p>
+                                <p class="certificate-detail">TIP Manila</p>
+                            </div>
+                            <div class="link-section">
+                                <a href="https://media.licdn.com/dms/image/v2/D562DAQEmklzDEFzKwg/profile-treasury-image-shrink_800_800/B56ZW_WmryHoAc-/0/1742672134290?e=1743278400&v=beta&t=gxhDMs1fECZ4dZIwtuHCVl7TGYUHAqjXaR48k-64Mag" class="certificate-link" target="_blank">></a>
+                            </div>
+                        </div>
+
                         <div class="certificate-container">
                             <div class="certificate-information">
                                 <p class="certificate-title">SQL Intermediate</p>
@@ -127,16 +210,6 @@
                             </div>
                             <div class="link-section">
                                 <a href="https://www.sololearn.com/certificates/CC-FPAB2PMG" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
-
-                        <div class="certificate-container">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">ISO/IEC 27001 Information Security Associate</p>
-                                <p class="certificate-detail">SkillFront</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="https://www.skillfront.com/Badges/87629165855725" class="certificate-link" target="_blank">></a>
                             </div>
                         </div>
 
@@ -203,61 +276,6 @@
                                 <a href="certificates/tip-webdev.pdf" class="certificate-link" target="_blank">></a>
                             </div>
                         </div>
-                        <div class="certificate-container">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">CCNAv7: Introduction to Networks</p>
-                                <p class="certificate-detail long-detail">Cisco Networking Academy</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="certificates/ccna-introduction.pdf" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
-                        <div class="certificate-container">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">CCNAv7: Switching, Routing, and Wireless Essentials</p>
-                                <p class="certificate-detail long-detail">Cisco Networking Academy</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="certificates/ccna-switching.pdf" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
-                        <div class="certificate-container">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">CCNAv7: Enterprise Networking, Security, and Automation</p>
-                                <p class="certificate-detail long-detail">Cisco Networking Academy</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="certificates/ccna-enterprise.pdf" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
-                        <div class="certificate-container">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">President's Lister (First Semester, S.Y. 2021-2022)</p>
-                                <p class="certificate-detail">TIP - Manila</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="https://global.turingcerts.com/co/cert?hash=b16f2252305d90e5efca2854bb789f7510ad905668132baf398b10cd1027d20d" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
-                        <div class="certificate-container last">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">President's Lister (Second Semester, S.Y. 2021-2022)</p>
-                                <p class="certificate-detail">TIP - Manila</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="https://app.diplomasafe.com/en-US/diploma/dd3993fcd5f96bd3d4ccedee14d544f8343d6fd1b" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
-
-                        <div class="certificate-container last">
-                            <div class="certificate-information">
-                                <p class="certificate-title long-title">President's Lister (Second Semester, S.Y. 2022-2023)</p>
-                                <p class="certificate-detail">TIP - Manila</p>
-                            </div>
-                            <div class="link-section">
-                                <a href="https://app.diplomasafe.com/en-US/diploma/d447cd058335abe3d4ae4b95e619ab82191486c36" class="certificate-link" target="_blank">></a>
-                            </div>
-                        </div>
                     </section>
                 </div>
             </section>
@@ -270,7 +288,7 @@
                 <hr class="project-break">
             </section>
             <article class="featured-projects">
-                <p class="other-projects">You can check my data analytics projects on <span class="github-link"><a href="https://github.com/russellcaragay">Github</a></span>.</p>
+                <p class="other-projects">My test automation projects are still a work in progress, but in the meantime, feel free to explore my data analytics projects on  <span class="github-link"><a href="https://github.com/russellcaragay">Github</a></span>!🚀</p>
                 <p class="other-projects"><button class="mockup-theme">Click Me</button> to change Mockups theme!</p>
                 <section class="project-container">
                     
@@ -428,13 +446,7 @@
             <div class="contact-information">
                 <div class="contact-details">
                     <h4 class="contact-title">You can directly contact me <a href=""><span class="contact-email">HERE</span></a></h4>
-                    <p class="contact-time">I'm available every:</p>
-                    <p class="contact-time">
-                        Monday to Saturday<br>
-                        7AM to 10PM (GMT +8)
-                    </p>
                     <p class="contact-info"><i class="fa-solid fa-envelope"></i> : caragayrussell@gmail.com</p>
-                    <p class="contact-info"><i class="fa-solid fa-phone"></i> : +63 998 167 5537</p>
                 </div>
                 <div class="social-links">
                     <p>You can also reach me here:</p>
